@@ -1,0 +1,42 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+		controllerName="ticket.ticket" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sf="sap.ui.layout.form">
+	<Page title="Student Ticket">
+		<content>
+	<sf:SimpleForm 
+		editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="2"
+			labelSpanL="4"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="2"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+	<sf:content>
+		
+	<Label text="Issue"/>
+	<ComboBox>
+	<items>
+	<core:Item text="Server Access"/>
+	<core:Item text="Videos not uploaded"/>
+	<core:Item text="Buffering "/>
+	</items>
+	</ComboBox>	
+	
+	<Label text="Comment"/>
+	<VBox>
+	<TextArea cols="155" rows="4"/>	
+	<Button text="Submit" width="100%"/>
+	</VBox>
+	</sf:content>
+	
+	</sf:SimpleForm>
+		</content>
+	</Page>
+</core:View>
